@@ -31,7 +31,7 @@ class CourseAdmin(admin.ModelAdmin):
 # QuestionAdmin: shows choices inline for each question
 class QuestionAdmin(admin.ModelAdmin):
     inlines = [ChoiceInline]
-    list_display = ['content', 'course', 'grade']
+    list_display = ['question_text', 'course', 'grade']
 
 
 # LessonAdmin
